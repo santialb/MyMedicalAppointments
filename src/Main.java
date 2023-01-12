@@ -1,15 +1,21 @@
+import java.util.Date;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
         Doctor myDoctor = new Doctor("Juan", "Pediatria");
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
 
-        patient.setWeight(54.6);
-        System.out.println(patient.getWeight());
+        myDoctor.addAvailableAppointment(new Date(), "4pm");
+        myDoctor.addAvailableAppointment(new Date(), "10am");
+        myDoctor.addAvailableAppointment(new Date(), "1pm");
 
-        patient.setPhoneNumber("23456789");
-        System.out.println(patient.getPhoneNumber());
+        for (Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
+            System.out.println(aA.getDate() + " " + aA.getTime());
+        }
+
+        System.out.println(myDoctor.getAvailableAppointments());
         //UIMenu.showMenu();
 
     }
