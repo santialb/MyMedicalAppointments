@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -15,7 +17,7 @@ public class Doctor extends User {
 
     public Doctor(String name, String email){
         super(name, email);
-        System.out.println("El nombre del Doctor asignado es " + name);
+        System.out.println("El nombre del model.Doctor asignado es " + name);
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();

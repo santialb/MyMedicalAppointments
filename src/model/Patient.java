@@ -1,3 +1,7 @@
+package model;
+
+import model.User;
+
 public class Patient extends User {
 
     private String birthday;
