@@ -13,6 +13,13 @@ public class Patient extends User {
         super(name, email);
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente del Hospital: Cruz verde");
+        System.out.println("Historial completo desde nacimiento");
+
+    }
+
     public String getHeight() {
         return this.height + " Mts";
     }

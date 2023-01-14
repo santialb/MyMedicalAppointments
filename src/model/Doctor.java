@@ -17,7 +17,13 @@ public class Doctor extends User {
 
     public Doctor(String name, String email){
         super(name, email);
-        System.out.println("El nombre del model.Doctor asignado es " + name);
+        System.out.println("El nombre del Doctor asignado es " + name);
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Colorado");
+        System.out.println("Departamento: Oncología");
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
