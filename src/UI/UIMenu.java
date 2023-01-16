@@ -1,3 +1,5 @@
+package UI;
+
 import model.Doctor;
 import model.Patient;
 
@@ -71,7 +73,7 @@ public class UIMenu {
                     if(p.getEmail().equals(email)){
                      emailCorrect = true;
                      patientLogged = p;
-                     
+
                  }
              }
             }
