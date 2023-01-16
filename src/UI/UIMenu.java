@@ -64,6 +64,7 @@ public class UIMenu {
                     if (d.getEmail().equals(email)){
                         emailCorrect = true;
                         doctorLogged = d;
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
@@ -73,7 +74,7 @@ public class UIMenu {
                     if(p.getEmail().equals(email)){
                      emailCorrect = true;
                      patientLogged = p;
-
+                    UIPatientMenu.showPatientMenu();
                  }
              }
             }

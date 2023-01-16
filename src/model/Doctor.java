@@ -8,7 +8,7 @@ import java.util.Date;
 public class Doctor extends User {
 
     private String speciality;
-
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public String getSpeciality() {
         return speciality;
     }
@@ -28,7 +28,6 @@ public class Doctor extends User {
         System.out.println("Departamento: Oncología");
     }
 
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     public void addAvailableAppointment(String date, String time){
         availableAppointments.add(new AvailableAppointment(date,time));
     }
@@ -60,10 +59,10 @@ public class Doctor extends User {
             this.id_availableAppointment = id_availableAppointment;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 
