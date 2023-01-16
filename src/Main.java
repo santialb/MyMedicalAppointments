@@ -10,7 +10,7 @@ public class Main {
         Doctor myDoctor = new Doctor("Juan", "juan@gm.com");
         User patient = new Patient("Alejandra", "alejandra@mail.com");
         patient.showDataUser();
-        /*
+
         myDoctor.addAvailableAppointment(new Date(), "4pm");
         myDoctor.addAvailableAppointment(new Date(), "10am");
         myDoctor.addAvailableAppointment(new Date(), "1pm");
@@ -20,7 +20,7 @@ public class Main {
         }
 
         System.out.println(myDoctor.getAvailableAppointments());
-        //UIMenu.showMenu(); */
+        /* UIMenu.showMenu(); */
 
     }
 }
